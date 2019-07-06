@@ -1,0 +1,13 @@
+.header {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.header span {
+    margin-right: 35px;
+}
+.list {
+    margin-bottom: 1px;
+}
+.list span {
+    margin-right: 25px;
+}
