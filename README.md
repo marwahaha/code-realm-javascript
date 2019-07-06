@@ -18,3 +18,9 @@ The State Management System should have the following abilties/functionalities -
 4.  A mechanism for communicating between the system and components attached to it.
 
 The folder structure is just as a reference, please feel free to create/remove them and add new files or folders as needed.
+
+## Development
+
+- Open the project folder in terminal
+- Fire command `npm install`.
+- Fire command `npm start`
