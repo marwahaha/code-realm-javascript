@@ -1,0 +1,22 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>TODO App</title>
+    </head>    
+    <body>
+        <h1>Todo App</h1>
+        <form action="javascript:void(0);" >
+            <label>Todo Name</label><br/>
+            <input name="todoName" type="text" id="todoName"><br/>
+            <label>Todo Date</label><br/>
+            <input name="todoDate" type="date" id="todoDate"><br/>
+            <label>Todo Description</label><br/>
+            <textarea name="todoDescription" id="todoDescription"></textarea><br/>
+            <button type="button" onclick="addTodo()">Add Todo</button>&nbsp;&nbsp;<button type="reset">Reset</button>
+        </form>    
+        <div id="todos">
+        </div>    
+        <script src="./js/components/TODO.js"></script>
+        
+     </body>
+</html>   
