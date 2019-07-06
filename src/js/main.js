@@ -1,12 +1,11 @@
-import store from './store/index';
+import store from './store/index.js';
 
-import Count from './lib/component/count'
-import Count from './lib/component/list'
-import Count from './lib/component/status'
+import Count from './lib/component/count.js'
+import List from './lib/component/list.js'
+import Status from './lib/component/status.js'
 const formElement = document.querySelector('.js-form');
 const inputElement = document.querySelector('#new-item-field');
 
-alert();
 formElement.addEventListener('submit', evt => {
 
     console.log('checking 1 ');
