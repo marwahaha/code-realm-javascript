@@ -25,13 +25,6 @@ export function state() {
     return this.cloneState.todos;
   }
 
-  //
-  //
-  // function assignInitialState(todosList) {
-  //   const cloneState = cloneFunction(maintainedStateList);
-  //   this.state;
-  // }
-
   function updateTodoItemById(todosList) {
     const cloneState = cloneFunction(maintainedStateList);
 

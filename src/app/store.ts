@@ -18,23 +18,27 @@ export class State {
     return this.cloneFunction(this.currentActiveState);
   }
 
-  getCurrentTodoById(todoId) {
-    const cloneState = this.cloneFunction(this.currentActiveState);
-    cloneState.todos.find((ele) => {
-      if (ele.todoId === todoId) {
-        return ele;
-      }
-    });
+  getTodoById(todoId) {
+    if (this.currentActiveState) {
+
+      const cloneState = this.cloneFunction(this.currentActiveState);
+      cloneState.todos.find((ele) => {
+        if (ele.todoId === todoId) {
+          return ele;
+        }
+      });
+    } else {
+      return null;
+    }
   }
 
   getAllTodosList() {
-    const cloneState = this.cloneFunction(this.currentActiveState);
-    return cloneState.todos;
-  }
-
-  updateTodoItemById(todosList) {
-
-    // this.state;
+    if (this.currentActiveState) {
+      const cloneState = this.cloneFunction(this.currentActiveState);
+      return cloneState.todos;
+    } else {
+      return [];
+    }
   }
 
   addTodoItem(todos) {
@@ -47,7 +51,6 @@ export class State {
       currActiveState.todos = [todos];
       this.maintainedStateList.push(currActiveState);
     }
-
   }
 
   cloneFunction(inputObj) {

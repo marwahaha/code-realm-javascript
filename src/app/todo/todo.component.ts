@@ -11,6 +11,7 @@ export class TodoComponent implements OnInit {
   todoList: ToDoModel[];
   stateDetails;
   isTodoEmpty: true;
+  toBeAddedTodo;
 
   constructor() {
   }
@@ -33,5 +34,13 @@ export class TodoComponent implements OnInit {
     if (this.todoList.length > 0) {
       this.isTodoEmpty = false;
     }
+  }
+
+  addMore() {
+    this.toBeAddedTodo = {} as ToDoModel;
+  }
+
+  save() {
+    this.stateDetails.addTodoItem(this.toBeAddedTodo);
   }
 }
