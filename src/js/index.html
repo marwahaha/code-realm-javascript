@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>TODO App</title>
+    
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="root"></div>
+    <h1>TODO List</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+             <h3>Add Task</h3>
+                <input id="newtask" >
+                <button onClick="addTask()">Add</button>
+            </div>
+            <div class="col-sm">
+                <h3>Open Task</h3>
+                <div id="opentask"></div>
+            </div>
+            <div class="col-sm">
+                <h3>Completed Task</h3>
+                <div id="donetask"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="store/store.js"></script>
+    <script src="components/TODO.js"></script>
+<!-- <script>
+
+let list = '<div>12</div>';
+    document.getElementById('donetask').innerHTML = list;
+</script> -->
+
+</html>
