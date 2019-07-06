@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+	<script src=js/store/store.js></script>
+	<script src=js/components/TODO.js></script>
+</head>
+<body onload="toDoDisplayList.getListToDisplay();">
+	<div>
+		<label for='todoTask'>To Do Task:</label>
+		<input name='todoTask' id='todoTask' type='text'>
+		<input type='button' onclick='toDoDisplayList.addTask()'  value='Add Task'>
+	</div>
+	<div>
+
+		<ul id='taskList'>
+			
+
+		</ul>
+	</div>
+</body>
+</html>
