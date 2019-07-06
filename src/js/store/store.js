@@ -2,11 +2,7 @@
 function filterOpenTODOS(arr) {
     return arr.filter(obj => obj.isOpen);
 }
-const initialState = [{
-    id: 1,
-    name: 'Todo 1',
-    isOpen: true
-}];
+const initialState = [];
 let currentState;
 let idx;
 function getState(payload) {
@@ -29,7 +25,8 @@ function getState(payload) {
             console.log('state', currentState);
             break;
         case 'TODO_ADDED':
-            const newTODO = { id: currentState[currentState.length - 1].id + 1, name: payload.data, isOpen: true };
+            const id = currentState.length ? currentState[currentState.length - 1].id + 1 : 1;
+            const newTODO = { id: id, name: payload.data, isOpen: true };
             currentState.push(newTODO);
             console.log('ACTION:', payload.action);
             console.log('state', currentState);

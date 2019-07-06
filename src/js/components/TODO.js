@@ -9,7 +9,7 @@ function populateTodos() {
 function setOpenOrClosed(id) {
     const todoItem = todosList.find(todo => todo.id === id);
     todoItem.isOpen = !todoItem.isOpen;
-    todoList = getState({ action: 'TODO_UPDATED', data: todoItem });
+    todosList = getState({ action: 'TODO_UPDATED', data: todoItem });
     updateUI();
 }
 
