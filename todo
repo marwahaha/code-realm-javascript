@@ -1,0 +1,22 @@
+how to create components with plain javascript
+1. use babel to generate build file
+2.using webpack
+3. script in package.json
+4.error in processed files
+
+
+creating centrailize state of app in store
+    1. Creating to do Class.
+        properties --> id, text, status
+    2. Create collection/array list of to do's 
+        properties - todo list
+        add methods on class 
+            1. add a todo 
+            2. remove todo
+            3. change to do data.       
+    3. when refreshing the page will empty the list.   
+    4. store should be immutable.    
+
+Presentational layer should render on document on documentid
+    1. add component button which will add values to store
+    2. remove button remove
