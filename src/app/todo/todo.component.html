@@ -1,0 +1,7 @@
+<div *ngIf="!isTodoEmpty">
+  <div *ngFor="let todo of todoList">
+    <p>todo.name</p>
+    <p> Status : {{todo.isDone}}</p>
+    <button (click)="markComplete"></button>
+  </div>
+</div>
