@@ -1,0 +1,14 @@
+<label>Add Task : </label>
+<input (input)="task = $event.target.value" type="text" class="form-control" />
+<button (click)="addTask()">Add Task</button>
+
+<div class="to-do-table" *ngFor="let item of allToDoTasks$ | async">
+  <div class="todo-row">
+    <div
+      class="marker"
+      [ngClass]="item.isDone ? 'done' : 'un-done'"
+      (click)="toggleIsDone(item)"
+    ></div>
+    <div>{{ item.toDoItem }}</div>
+  </div>
+</div>

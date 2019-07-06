@@ -1,0 +1,21 @@
+.to-do-table {
+  border: 1px solid black;
+}
+
+.todo-row {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+.marker {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+}
+
+.done {
+  background-color: green;
+}
+.un-done {
+  background-color: red;
+}
