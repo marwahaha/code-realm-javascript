@@ -1,5 +1,4 @@
 // The core logic of the store will go here.
-// The core logic of the store will go here.
 var appState = {
     todoTasks: [],
     completedTaks: []
