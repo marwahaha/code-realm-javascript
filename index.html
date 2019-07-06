@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script src="TODO.js"></script>
+</head>
+
+<body>
+    <h2>List of ToDo tasks</h2>
+    <table id="toDo-list">
+        <thead>
+            <th>ToDo Tasks</th>
+            <th>Action</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Add ToDo Task</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="task_name" id="task_name"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><button type="button" onclick="addTask()">Add</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
