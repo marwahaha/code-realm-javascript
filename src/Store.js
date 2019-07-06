@@ -4,7 +4,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
     state:{
-        taskList:['Vishal','Shelar']
+        taskList:[]
     },
     getters:{
         getTaskList : (state) => {return state.taskList}

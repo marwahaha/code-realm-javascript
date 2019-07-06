@@ -36,6 +36,9 @@ export default {
     deleteItem(index){
       this.$store.dispatch('_deleteItem',index);
     }
+  },
+  beforeDestroy(){
+    
   }
 }
 </script>
